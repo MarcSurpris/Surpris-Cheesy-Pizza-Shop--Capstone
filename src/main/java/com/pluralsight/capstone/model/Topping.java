@@ -11,4 +11,8 @@ public abstract class Topping {
         this.name = name;
         this.category = category;
     }
+
+    public void addExtra(int amount) {
+        this.extraAmount += amount;
+    }
 }
