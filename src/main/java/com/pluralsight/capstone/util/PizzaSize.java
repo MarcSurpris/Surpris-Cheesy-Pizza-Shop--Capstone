@@ -5,5 +5,14 @@ public class PizzaSize {
     public static final String MEDIUM_12_INCH = "MEDIUM_12_INCH";
     public static final String LARGE_16_INCH = "LARGE_16_INCH";
 
+    public static double getBasePrice(String size) {
+        return switch(size) {
+            case PERSONAL_8_INCH -> 8.50;
+            case MEDIUM_12_INCH -> 12.00;
+            case LARGE_16_INCH -> 16.50;
+            default -> 0.0;
+        };
+    }
+
 
 }
