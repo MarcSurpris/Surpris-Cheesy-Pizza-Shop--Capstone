@@ -21,4 +21,6 @@ public abstract class Topping {
         double extraPrice = getExtraPrice(size) * extraAmount;
         return base + extraPrice;
     }
+
+    public abstract double getBasePrice(String size);
 }
