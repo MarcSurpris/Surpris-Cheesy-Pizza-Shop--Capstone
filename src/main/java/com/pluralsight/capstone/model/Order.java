@@ -43,4 +43,10 @@ public class Order {
         return sb.toString();
     }
 
+    public void saveReceipt() {
+        if (!isValid()) {
+            throw new IllegalStateException("Invalid order");
+        }
+    }
+
 }
