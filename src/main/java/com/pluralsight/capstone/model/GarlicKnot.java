@@ -1,4 +1,4 @@
 package com.pluralsight.capstone.model;
 // GarlicKnot
-public class GarlicKnot {
+public class GarlicKnot implements Item {
 }
