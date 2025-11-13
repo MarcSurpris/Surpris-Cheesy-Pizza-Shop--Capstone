@@ -8,5 +8,11 @@ import java.io.IOException;
 
 // Order
 public class Order {
+    private List<Item> items = new ArrayList<>();
+    private double totalCost = 0.0;
 
+    public void addItem(Item item) {
+        items.add(item);
+        totalCost += item.getPrice();
+    }
 }
