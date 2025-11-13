@@ -18,7 +18,7 @@ public class Order {
 
     public void removeItem(Item item) {
         if (items.remove(item)) {
-            totalCost -= items.getPrice();
+            totalCost -= item.getPrice();
         }
     }
 
@@ -54,6 +54,10 @@ public class Order {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Item> getItems() {
+        return items;
     }
 
 }
