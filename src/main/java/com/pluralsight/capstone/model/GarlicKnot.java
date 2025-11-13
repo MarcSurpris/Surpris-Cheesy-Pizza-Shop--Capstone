@@ -12,4 +12,9 @@ public class GarlicKnot implements Item {
     public double getPrice() {
         return quantity * PRICE_PER;
     }
+
+    @Override
+    public String getDescription() {
+        return quantity + " Garlic Knots";
+    }
 }
