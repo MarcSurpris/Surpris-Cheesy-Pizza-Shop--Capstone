@@ -47,6 +47,13 @@ public class Order {
         if (!isValid()) {
             throw new IllegalStateException("Invalid order");
         }
+        String fileName = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss")) + ".txt";
+        String content = generateReceipt();
+        try (FileWriter writer = new FileWriter("receipts/" + fileName)) {
+            writer.write(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
