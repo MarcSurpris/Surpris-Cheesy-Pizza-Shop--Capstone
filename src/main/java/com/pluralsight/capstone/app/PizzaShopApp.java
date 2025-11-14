@@ -104,5 +104,14 @@ public class PizzaShopApp {
 
         Pizza pizza = new Pizza(size, crust);
 
+        // stuffed crust
+        System.out.println("Would you like stuffed crust? (y/n)");
+        String stuffed = scanner.nextLine().trim().toLowerCase();
+        pizza.setStuffedCrust(stuffed.startsWith("y"));
+
+        // Add toppings
+        addToppingsToPizza(pizza);
+
+        currentOrder.addItem(pizza);
     }
 }
