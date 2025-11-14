@@ -1,6 +1,7 @@
 package com.pluralsight.capstone.app;
 
 import com.pluralsight.capstone.model.Order;
+import com.pluralsight.capstone.model.Pizza;
 import com.pluralsight.capstone.util.CrustType;
 import com.pluralsight.capstone.util.PizzaSize;
 
@@ -99,8 +100,9 @@ public class PizzaShopApp {
             case 3 -> CrustType.THICK;
             case 4 -> CrustType.CAULIFLOWER;
             default -> CrustType.REGULAR;
-        }
-;
+        };
+
+        Pizza pizza = new Pizza(size, crust);
 
     }
 }
