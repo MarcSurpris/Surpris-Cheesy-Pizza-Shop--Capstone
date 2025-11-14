@@ -185,5 +185,11 @@ public class PizzaShopApp {
             default -> DrinkSize.MEDIUM;
         };
 
+        System.out.println("Enter flavor:");
+        String flavor = scanner.nextLine().trim();
+
+        Drink drink = new Drink(dSize, flavor);
+        currentOrder.addItem(drink);
+
 }
 }
