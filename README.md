@@ -67,7 +67,7 @@ git clone https://github.com/MarcSurpris/Surpris-Cheesy-Pizza-shop.git
 cd Surpris-Cheesy-Pizza-shop
 
 
-// From PizzaSize.java: Dynamic meat pricing based on size (no enums!)
+// From PizzaSize.java: Dynamic meat pricing based on size
 public static double getMeatPrice(String size) {
 return switch (size) {
 case PERSONAL_8_INCH -> 1.00;
