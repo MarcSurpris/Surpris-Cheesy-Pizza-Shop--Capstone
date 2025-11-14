@@ -13,9 +13,9 @@ Choose from 3 sizes, 4 crust types, stuffed crust, and unlimited toppings with e
 Topping Categories
 Premium (Meat, Cheese) with costs; Regular, Sauce, Side included (extras free for non-premium).
 Pricing Engine
-Dynamic calculations based on size—no enums, using string constants and switch expressions.
+Dynamic calculations based on size, using string constants and switch expressions.
 Order Validation
-Ensures orders have at least one pizza OR drinks/garlic knots.
+Ensures orders have at least one pizza, drinks or garlic knots.
 Receipt System
 Automatically generates and saves timestamped .txt files in receipts/.
 Signature Pizzas
