@@ -1,7 +1,6 @@
-# Surpris-Cheesy-Pizza-
+# Surpris Pizza shop
 
-![img.png](img.png)
-
+![img_1.png](img_1.png)
 
 **Project Overview** 
 
