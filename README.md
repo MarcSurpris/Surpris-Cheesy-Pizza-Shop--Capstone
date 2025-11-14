@@ -3,7 +3,8 @@
 ![img.png](img.png)
 
 
-Project Overview 
+**Project Overview** 
+
 Surpris Pizza Shop is a console-based point-of-sale (POS) system designed for a growing custom pizza shop. It automates the ordering process, allowing customers to create personalized pizzas while ensuring a seamless experience from order placement to receipt generation.  Why it's useful: Eliminates manual paper orders, handles complex customizations, and scales for future online integration.
 What you can do: Build, validate, and save orders with detailed pricing.
 Audience: Java developers, students learning OOP, or anyone building POS systems.  Built as part of the Pluralsight Advanced Java OOP Capstone, emphasizing Object-Oriented Principles like inheritance, polymorphism, and encapsulation.  FeaturesFeature
@@ -23,7 +24,7 @@ Pre-configured options like Margherita and Veggie, customizable as subclasses.
 User-Friendly Console
 Interactive menus for easy navigation.
 
-Application Flow
+**Application Flow**
 
 Home Screen
 └──> New Order
@@ -82,7 +83,8 @@ GitHub Project BoardView Project Board →  Columns: To Do, In Progress, Review,
 Commits: 20+ meaningful messages (e.g., "feat: add Pizza class with toppings")  
 Branches: Used for features (e.g., feature/order-validation)
 
-Technologies Used
+**Technologies Used**
+
 Java 17  
 OOP Principles: Inheritance (Topping subclasses), Polymorphism (Item implementations), Encapsulation (private fields), Abstraction (abstract methods)  
 Git & GitHub for version control  
@@ -102,7 +104,9 @@ This project is licensed under the MIT License. See LICENSE for details.
 
 # **Author** 
 
-Marc Surpris
+**Marc Surpris**
+
 Pluralsight Java Capstone Student
+
 Thank you for checking out Surpris Pizza Shop! If you like it, give it a star on GitHub.  
 

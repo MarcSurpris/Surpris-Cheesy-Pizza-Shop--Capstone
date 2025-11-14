@@ -1,10 +1,13 @@
 package com.pluralsight.capstone.model;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.io.IOException;
+
 
 // Order
 public class Order {
@@ -47,11 +50,15 @@ public class Order {
         if (!isValid()) {
             throw new IllegalStateException("Invalid order");
         }
-        String fileName = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss")) + ".txt";
+        String fileName = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss")) + ".txt";  // Use dashes for valid filename
         String content = generateReceipt();
-        try (FileWriter writer = new FileWriter("receipts/" + fileName)) {
-            writer.write(content);
+        try {
+            Files.createDirectories(Paths.get("receipts"));
+            try (FileWriter writer = new FileWriter("receipts/" + fileName)) {
+                writer.write(content);
+            }
         } catch (IOException e) {
+            System.err.println("Failed to save receipt: " + e.getMessage());
             e.printStackTrace();
         }
     }
